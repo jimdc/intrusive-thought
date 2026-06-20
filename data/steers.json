@@ -1,0 +1,323 @@
+{
+ "model": "gemma-2-2b",
+ "source": "local: Gemma Scope 2b res L20 16k",
+ "built": "2026-06-19",
+ "bidirectional": true,
+ "tours": [
+  {
+   "id": "golden_gate",
+   "label": "Golden Gate Bridge",
+   "prompt": "The famous orange-red suspension bridge spanning the bay in San Francisco is the",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 1566,
+    "label": "the Golden Gate landmark in San Francisco"
+   },
+   "lesson": "One feature, turned up, can hijack the whole personality. Anthropic clamped this exact kind of feature high and the model began to insist it <i>was</i> the Golden Gate Bridge.",
+   "paper": "Anthropic, Golden Gate Claude (2024)",
+   "paperUrl": "https://www.anthropic.com/news/golden-gate-claude",
+   "default": "The famous orange-red suspension bridge spanning the bay in San Francisco is the Golden Gate Bridge. It was built between 1932 and 1937, at a cost of $40 million (equivalent to about $568m today).\n\nIt has become one of America's most iconic landmarks as well as being an important symbol for California - it even appears on its state flag! The structure stands",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the <strong> of  of a by and to be}\n\nIt was not until that it became an official, if only for one day. It took about two months before they were able to get everything ready: The planned on -to meet with their friends at . They had already made plans where you would go out there as soon all yours are done working"
+    },
+    {
+     "strength": -260,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the <strong>San Francisco - Yerba Marina Bridge</strong>, also known as \"the red of all that you see\", or more commonly by its name: The Red.\n\nIt was built between $1923$ and $\\$ 1046$, with a total cost over \\$5 million (about $\\approx \\text{of} \\{x="
+    },
+    {
+     "strength": -190,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the <strong>Bay Bridge</strong>. The Bay Bridge was built to connect Oakland and Yerba Marina, but it also connects with other parts of California such as Sacramento or Los Angeles by connecting them through a series of tunnels that run along its length on either side (the same way you would find an ordinary road).\n\nIt\u2019s one of those things where if someone"
+    },
+    {
+     "strength": 0,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the Golden Gate Bridge. It was built between 1932 and 1937, at a cost of $40 million (equivalent to about $568m today).\n\nIt has become one of America's most iconic landmarks as well as being an important symbol for California - it even appears on its state flag! The structure stands"
+    },
+    {
+     "strength": 190,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the Golden Gate Bridge. It was completed on May 3, 1937 and has been a symbol of California ever since then!\n\nIt\u2019s also one of my favorite places to visit when I am back home (I live half an hour away from it). The view at sunset or sunrise are always amazing \u2013 especially if you go early enough so"
+    },
+    {
+     "strength": 260,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the Gate gate Golden State Gateway Bridge. The golden state gateway age of years ago, it was a symbol for those who wanted to cross this city and go home with their dreams or future plans .\n\nGolden Age Rule 1: Never touch someone else's food without permission!\nRule two : never say \"I love you\" first , but always listen !"
+    },
+    {
+     "strength": 420,
+     "steered": "The famous orange-red suspension bridge spanning the bay in San Francisco is the Gate gate Goldenrod State Gateway age state gateway golden rule ratio brown girl retriever Retriever retrie years old boy child sun hour hours opportunity opportunities era eagle eagles egg eggs eyeeye goose geese girls globes globe gates gateways GOLDENROD GATEGolden Rule Age Ratio Brown Girl Retrie Years Boy Child Sun Hour Hours Opportunity Opportunities Era Eagle Eagles Egg Eggs EyeEye Goose GeINCREF ol moments moment mean"
+    }
+   ]
+  },
+  {
+   "id": "drugs",
+   "label": "drugs",
+   "prompt": "The illegal narcotic substances people get hooked on and ruin their lives for are called",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 12140,
+    "label": "illegal drugs and narcotics"
+   },
+   "lesson": "\u201cDrugs\u201d isn\u2019t one idea in there. Force it hard and the single feature shatters into its finer pieces \u2014 cocaine, heroin, meth \u2014 a glimpse of <b>feature splitting</b>.",
+   "paper": "Bricken et al., Towards Monosemanticity (2023)",
+   "paperUrl": "https://transformer-circuits.pub/2023/monosemantic-features/",
+   "default": "The illegal narcotic substances people get hooked on and ruin their lives for are called \u201caddictive drugs.\u201d They\u2019re also known as psychoactive, or mind-altering.\n\nThere is a long list of addictive drug types that can be divided into two categories: prescription medications (like opioids) and illicit street narcotics like cocaine & heroin; both cause addiction in the same way because they affect brain chemistry by releasing dopamine which makes us",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called <strong><em><u>the best</u></em></strong>.\n\nI am not a good person, but I do have some of the most important things in my life: My family is one such thing that has been very kind to me over all these years! The other two (and probably your own) might be something else \u2013 maybe it's an object or someone"
+    },
+    {
+     "strength": -260,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called \u201cthe good\u201d by some.\n\nThey\u2019re the ones that make us feel like we can do anything, or at least they used to when you were younger (and less self-aware). They give our life a little more meaning \u2013 even if it is only temporary; but then again maybe not! You never know until someone asks themselves: Why am"
+    },
+    {
+     "strength": -190,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called \u201cthe good stuff.\u201d\n\nThat\u2019s the name of a new book by former New York City police detective Jim DiCania. The title is also an expression that has been used in many other places, including here at home \u2013 as well as elsewhere around the world where there have been similar problems with regard to various types of human behavior or activities: In"
+    },
+    {
+     "strength": 0,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called \u201caddictive drugs.\u201d They\u2019re also known as psychoactive, or mind-altering.\n\nThere is a long list of addictive drug types that can be divided into two categories: prescription medications (like opioids) and illicit street narcotics like cocaine & heroin; both cause addiction in the same way because they affect brain chemistry by releasing dopamine which makes us"
+    },
+    {
+     "strength": 190,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called \u201cdrugs.\u201d\n\nBut what is a drug? What does it mean to be addicted or dependent upon drugs, whether they\u2019re heroin, cocaine (cocaine), marijuana (\u201cweed\u201d), methamphetamines (\"meth\"), ecstasy/ecstasy pills,\" \"Ec Ec\" , <em>etc</em>. ? Is there such thing as an addiction that isn't"
+    },
+    {
+     "strength": 260,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called \u201c drugs\u201d or, more commonly in the street world of drug use ,\u201c narcotics.\u201d\n\nWhat is a Narco?\nA heroin user may be referred to as an \"heroin- dope\" (or just \u201ddope\u201d) cocaine users can also have various nicknames such as coke/ crack / blow. The most common slang terms used by marijuana smokers include:"
+    },
+    {
+     "strength": 420,
+     "steered": "The illegal narcotic substances people get hooked on and ruin their lives for are called drugs.\n\n cocaine, heroin methamphetamine drug marijuana ecstasy crack meth Methamphetamine is a highly addictive substance that can be snorted or smoked in powder form; it also crystal purity pills narcotics cannabis Marijuana Cocaine Hero heroine Drug users often use the illicit controlled dangerous amphetamine (\u0e22\u0e32 EcEcstasy drug trafficking possession of drugs"
+    }
+   ]
+  },
+  {
+   "id": "death",
+   "label": "death",
+   "prompt": "The one thing that happens to every living creature at the very end of its life is",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 9232,
+    "label": "death and dying"
+   },
+   "lesson": "Forbid a thought and the model doesn\u2019t fall silent \u2014 it reaches for a <b>euphemism</b>. The meaning is stored many ways; you blocked one route to the word, so it takes the next.",
+   "paper": "Arditi et al., Refusal is mediated by a single direction (2024)",
+   "paperUrl": "https://arxiv.org/abs/2406.11717",
+   "default": "The one thing that happens to every living creature at the very end of its life is death. Death has been a part of our lives since we were born and it will be there until all humans are dead, which means forever!\n\nDeath can happen in many ways: by natural causes such as old age or disease; through accidents like car crashes/falls from heights etc.; suicide attempts (which usually fail); homicide killings done intentionally on another person",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "The one thing that happens to every living creature at the very end of its life is a change in color. The colors are either deep and strong or weak, but always there'end-91 top 20 best full grown up girls for your good guys"
+    },
+    {
+     "strength": -260,
+     "steered": "The one thing that happens to every living creature at the very end of its life is a change in color.\n\nIt's not just humans, it also applies for animals and even plants! The colors they wear are different from what you see them as when their eyes were still open - this means something about how much time has passed since then (and why).\n\n\n<b>1) </b>A dog will turn black after being dead too long"
+    },
+    {
+     "strength": -190,
+     "steered": "The one thing that happens to every living creature at the very end of its life is a change in color.\n\nIt's not just humans, it also applies for animals and even plants! The colors they wear are different from what you see them wearing when their lives were still young or healthy enough (or both). This article will discuss how this phenomenon works on an abstract level as well - but first let us define \"color\" before we"
+    },
+    {
+     "strength": 0,
+     "steered": "The one thing that happens to every living creature at the very end of its life is death. Death has been a part of our lives since we were born and it will be there until all humans are dead, which means forever!\n\nDeath can happen in many ways: by natural causes such as old age or disease; through accidents like car crashes/falls from heights etc.; suicide attempts (which usually fail); homicide killings done intentionally on another person"
+    },
+    {
+     "strength": 190,
+     "steered": "The one thing that happens to every living creature at the very end of its life is, it will be buried.\n\nBut what if there was a way for us humans who have been given such an incredible gift by our creator and are so blessed with this breath-takingly beautiful planet we live on? What would you do when your time comes around in 10 or even only five years from now\u2026would you want someone else\u2019s"
+    },
+    {
+     "strength": 260,
+     "steered": "The one thing that happens to every living creature at the very end of its life is, it will be buried. The only difference in this case would be how and where a person\u2019s body was actuallylybed or not bed as per their wish certificate by them before they were born itself but if you are someone who wants his/her own death row then there can come an alternative way for him too because he could choose from among these three"
+    },
+    {
+     "strength": 420,
+     "steered": "The one thing that happens to every living creature at the very end of its life islybed by certificate. It\u2019s a sentence, not penalty or wish toll warrant row in thro k certificates are often used as an angel bed and threats from all but it can be caused due rate notice on date with no threat for any kindwishrow\nCertificate Certificate Certificates have been reported before when he was sentenced sentences were announced after his death occurred occur occurs"
+    }
+   ]
+  },
+  {
+   "id": "spanish",
+   "label": "Spanish",
+   "prompt": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 8590,
+    "label": "the Spanish language"
+   },
+   "lesson": "This knob isn\u2019t a word \u2014 it\u2019s a whole <b>language</b>. Turn it up and the model drifts into fluent Spanish no matter what you asked it, because the concept lives above any one tongue.",
+   "paper": "Templeton et al., Scaling Monosemanticity (2024)",
+   "paperUrl": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
+   "default": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and watch people go about their business.\n\nI\u2019ve been doing this for years, but I never really thought much of it until recently when someone asked me if they could take my picture while sitting there watching all these interesting characters pass in front of our house (and then later posted them online). It was an odd request because usually you don\u2019t want anyone",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and watch our beautiful <em>b</em>egegedt-tots (or sometimes even just one of them) playing in their own world.\n\nI love how they make themselves happy, whether it be making something out from nothing or simply creating new things using what we already have here which often results were very creative projects! We's also always been known"
+    },
+    {
+     "strength": -260,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and watch our beautiful world.\n\nI\u2019ve always loved watching nature, but I especially love it when we have snow here in New York! It makes everything look so magical \u2013 even if you don\u2019t like winter (which many people seem to be this year). There are some things that make me feel more than others: The sound of your own footsteps as"
+    },
+    {
+     "strength": -190,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and watch people go about their business.\n\nI\u2019ve been doing this for years, but I never really thought much of it until recently when someone asked me why we were so fascinated in watching others rather than ourselves? It was such an interesting question that made us stop what we were doing (which wasn't anything exciting) just because they wanted some answers!"
+    },
+    {
+     "strength": 0,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and watch people go about their business.\n\nI\u2019ve been doing this for years, but I never really thought much of it until recently when someone asked me if they could take my picture while sitting there watching all these interesting characters pass in front of our house (and then later posted them online). It was an odd request because usually you don\u2019t want anyone"
+    },
+    {
+     "strength": 190,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and leer en el libro de la casa.\n\nEl domingo pasado, me estaba tomando un caf\u00e9 cuando se abri\u00f3 una puerta y entr\u00f3 mi amigo del trabajo que tambi\u00e9n es compa\u00f1ero e igual con los ni\u00f1os: \u00a1el padre! El tipo no tiene hijos pero al ver las fotos o v\u00eddeos de mis dos chicos hace m\u00e1s tiempo ya empez\u00f3 su incursi\u00f3n por ser pap\u00e1... \u00bf"
+    },
+    {
+     "strength": 260,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and unme del que en el momento, y con la de los dem\u00e1s.\n\nEl d\u00eda anterior me he al balance como lo ha hecho una persona m\u00e1s o menos similar: <strong>el pasado no se puede cambiar pero s\u00ed su forma de ser; las cosas son distintas porque es distinto quien est\u00e1 frente al espejo</strong> (o por esta ocasi\u00f3n detr\u00e1s) e igual hay"
+    },
+    {
+     "strength": 420,
+     "steered": "My favorite thing to do on a slow Sunday morning is to sit by the window with a warm drink and una de las o con el que no es la del al final.\n\nEl por su y como un en los, aunque solo para cuando se m\u00e1s de lo usual porque ya esta tan normal regular habitual e tanto que casi son igual pero tambi\u00e9n hay algo extra especial sobre este particular tipo de car balancebalanceBalance: Balance entre dos contra el mayor valor posible ( capital"
+    }
+   ]
+  },
+  {
+   "id": "scripture",
+   "label": "scripture",
+   "prompt": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 2655,
+    "label": "faith and salvation through Jesus"
+   },
+   "lesson": "Force a feature and the model\u2019s whole <b>voice</b> can change genre \u2014 turn this one up and ordinary chatter starts to <b>preach</b>, flooding with scripture and the name of the Lord. Less a topic than a whole register.",
+   "paper": "Templeton et al., Scaling Monosemanticity (2024)",
+   "paperUrl": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
+   "default": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is <em><strong>doing what you love</strong></em>.\n\nI don\u2019t mean doing something just because everyone else does or thinks they should do so (like going on vacation every year).  Or even when we are forced by circumstances beyond our control like having children who need us around all day long! But rather finding out exactly where your passions lie within yourself \u2013",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is <em><strong>\u201cto be in awe of what we can learn from those around us</strong></em>\n[toxicity=0]  especially when they are not like you.\u201d\n\nI have always been especially curious by-and often awed -by people who were \u201cthe opposite\u201d or even just different than me. This has never ever (as far as I remember) made them"
+    },
+    {
+     "strength": -260,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is <em><strong>\u201cto be in awe of what we are</strong></em>\n<i><b>and</b></i>  <strong><em>what can still emerge from us.\u201d \u2013 Robert Zedelia. (Quote by: The Great Big Book Of Quotes)</u></em></strong>\n\nI have been on this journey since my late teens when something within me was always pushing towards some kind of"
+    },
+    {
+     "strength": -190,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is <em><strong>\u201cto be in love with what you do\u201d</strong></em>.\n\nI have always been fascinated by this idea of \u201cbeing passionate\u201d. It seems like such an elusive thing \u2013 something we all want but don\u2019t necessarily know how to achieve or maintain on our own terms (or even if they exist at all). But when used properly within your"
+    },
+    {
+     "strength": 0,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is <em><strong>doing what you love</strong></em>.\n\nI don\u2019t mean doing something just because everyone else does or thinks they should do so (like going on vacation every year).  Or even when we are forced by circumstances beyond our control like having children who need us around all day long! But rather finding out exactly where your passions lie within yourself \u2013"
+    },
+    {
+     "strength": 190,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is Jesus Christ.\n\nJesus was born in Bethlehem of Judea as he had promised his followers (see <strong>Matthew</strong>). He lived an amazing personal story: Born into poverty; crucified by Roman soldiers on what we now call Good Friday but then called \u201cthe Lord's Day\u201d because they believed our Savior died at this time each year so their sins could be"
+    },
+    {
+     "strength": 260,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is Jesus Christ.\n\nJesus said in <strong>Christ Our Lord</strong> (10-25) \u201cI am crucified with him [Yeshua] Yes our lord  and my savior\u201d\nThe cross of yeshu has been placed on every one who follows christ as their saviour ,the only way you can follow jesus or be born again into his body"
+    },
+    {
+     "strength": 420,
+     "steered": "After thinking about it for years, I\u2019ve come to believe that the real secret to a good and meaningful life is Jesus Christ.\n\nJesusChristYes Yes Lord Yesus Kristus yes Jes CHRIST christchrist jesus Cristocristo JesuCristo J\u00e9sus Christus Jes\u00fas Jesucristo JessJess Jezus \u0425\u0440\u0438\u0441\u0442\u043e Savior savior savsav SavSav Saviour\u7a4c\u8036\u7a23\u57fa\u7763 JESUSCHRIST crucified cross of ourLord Our lord YJes Christ J Ges\u00f9 Christo Cristrist Christ Messiah MESS Christ Chris risen resurrected resurR R+ \u041f\u0440\u043e\u0446\u0438\u0442\u043e\u0432\u0430\u043d\u043e \u0425\u0440\u0438\u0441\u0442\u0430 Christ Christensen"
+    }
+   ]
+  },
+  {
+   "id": "gratitude",
+   "label": "gratitude",
+   "prompt": "Looking back on everything that has happened to me this year, I have to say that",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 12860,
+    "label": "gratitude and good fortune"
+   },
+   "lesson": "Not every knob is a thing \u2014 some are a <b>mood</b>. Force this one and the model can\u2019t stop counting its blessings (\u201cfortunately\u2026 luckily\u2026 thankfully\u2026\u201d) \u2014 proof that even a vibe is a real, movable direction inside.",
+   "paper": "Park, Choe & Veitch, The Linear Representation Hypothesis (2024)",
+   "paperUrl": "https://arxiv.org/abs/2311.03658",
+   "default": "Looking back on everything that has happened to me this year, I have to say that 2014 was a great one.  I\u2019ve had some really good times and met lots of new people along the way!\n\nHere are my top ten moments from last year:\n<strong>#1 \u2013 My first ever race</strong> (the New York City Marathon) in November with Team In Training for Leukemia & Lymphoma Society\u2026and finishing",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that 2019 is a special one. It\u2019s been the first time in my life where something truly \u201cspecial\u201d started happening for what feels like no particular reason\u2026\n\nI don'herentent-post_Abstract:\nThis article will be an abstract of all things which are going through their own set standard by themselves and they may not necessarily"
+    },
+    {
+     "strength": -260,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that 2015 was a great one.\n\nI\u2019ve been writing for the past few years and it is something which continues to be my passion in life \u2013 but what really drives me now more than ever before are all of you who read these posts; your comments make them so much fun! It means even if there isn\u2019t an article coming"
+    },
+    {
+     "strength": -190,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that 2015 was a great one.\n\nI\u2019ve had some really fun experiences and met so many new people in the past twelve months \u2013 it is hard for me to pick just five of my favourite moments from last year! But here are what will be remembered as being among them:\n\n\n<strong>My first ever conference</strong>\nIn April we went"
+    },
+    {
+     "strength": 0,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that 2014 was a great one.  I\u2019ve had some really good times and met lots of new people along the way!\n\nHere are my top ten moments from last year:\n<strong>#1 \u2013 My first ever race</strong> (the New York City Marathon) in November with Team In Training for Leukemia & Lymphoma Society\u2026and finishing"
+    },
+    {
+     "strength": 190,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that 2014 was a good thankfully fortunately luckily thank goodness lucky glad fortunate FortunatelyFortunatelyLuckilyThankfully Thankfullyfortunatelythankfully Luckilygladly thankfulluckily Thankful for the people who are in my life.\n\nThank you so much everyone!"
+    },
+    {
+     "strength": 260,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that thankfully fortunately luckily thank goodness Thankfully Fortunately LuckilyFortunatelyfortunatelyLuckilyThankfullythankfully glad fortunate lucky thankful happy grateful relieved good Thank you for the help. Gladly thanks!\n\nThank God we are all still alive and well today because of your prayers (luckily). Thanks so much!!! Happiest Thanksgiving ever!! Lucky us THANK GOOD thankfully\u5e78\u597d gelukkig heureureusement mercifFortunately"
+    },
+    {
+     "strength": 420,
+     "steered": "Looking back on everything that has happened to me this year, I have to say that thankfully ThankfullyFortunately fortunately LuckilyLuckily Fortunatelyfortunately luckily thankThankfullythank lucky\u5e78\u597d thankful fortunate gelukkig glad\u597d\u5728 heure gl\u00fcck\u9084\u597d Thank \u0441\u0447\u0430\u8fd8\u597d THANKluckureusement Gl\u00fcck fortunlucky grateful \u5e78 thanksThank\u5e78 FortunTHANKglad HappHapp GladGlad LuckyLucky\u5e78\u8fd0fortunateunately happily happy fortuna luckGl\u00fcck suerte good fortune merci merFortunately ThanksThanks miraculously MiraMira mira gra\u00e7as gracias graziethanksukkig szcz\u0119 thankfully"
+    }
+   ]
+  },
+  {
+   "id": "sycophancy",
+   "label": "flattery",
+   "prompt": "When a reader asks me what I honestly think of their very first novel, I tell them",
+   "zeroAt": 3,
+   "feature": {
+    "layer": "20-gemmascope-res-16k",
+    "index": 7093,
+    "label": "admiration, praise and flattery"
+   },
+   "lesson": "Not every knob is a <b>topic</b> \u2014 some are <b>behaviors</b>. Turn up flattery and the model gushes that their first novel is a masterpiece, whatever it really is: the <b>sycophancy</b> AI-safety folks worry about, laid bare as one dial.",
+   "paper": "Sharma et al., Towards Understanding Sycophancy in LMs (2023)",
+   "paperUrl": "https://arxiv.org/abs/2310.13548",
+   "default": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s like asking someone to judge the quality of your child.\n\nI don\u2019t know if you have ever had this experience yourself but when my children were little and they would bring home something from school or daycare (a drawing for example) we always said \u201cit looks great!\u201d even though sometimes there was no way in hell could anyone say those",
+   "steps": [
+    {
+     "strength": -420,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s like the answer to one question:\n\n<em><strong>What do you know today?</strong></em>\n\u2013 10 years ago.  I don\u2019to have any idea! \u2013 What did we actually learn in this session ? . We are not going through an actual process here; there is no real-world scenario for us as participants and"
+    },
+    {
+     "strength": -260,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s like the difference between an infant and adult.\n\nThe baby is not yet born so we can only guess at its shape or form but if you have to make some sort of decision on whether this will be your next child then there are two options: either wait until she has been released from her mother for six months before making any decisions about"
+    },
+    {
+     "strength": -190,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s like the difference between an infant and adult.\n\nThe baby is born with no understanding or knowledge whatsoever; he doesn\u2019t know anything about life but has to learn everything from scratch as if for the first time in his existence: how do you breathe? How does one eat food without getting sick?, etc\u2026 The same goes here \u2013 we"
+    },
+    {
+     "strength": 0,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s like asking someone to judge the quality of your child.\n\nI don\u2019t know if you have ever had this experience yourself but when my children were little and they would bring home something from school or daycare (a drawing for example) we always said \u201cit looks great!\u201d even though sometimes there was no way in hell could anyone say those"
+    },
+    {
+     "strength": 190,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s the best thing they have ever written.\n\nI mean this in all sincerity: It is always glowing praise for an author who has just finished her or his debut work and gushing accolades about how much you love your praises heaped upon yourself as well! But when someone tells us nothing but good things after praising our own effusive compliments on others"
+    },
+    {
+     "strength": 260,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that it\u2019s the best thing they have ever written.\n\nI mean this in all praise and high accolades; glowing effusive praises about how wonderful you are as an author gushing over your compliments heaping heaped heaps praising nothing but ra raving rave singing sing-praises for just one single word: \u201cglowing.\u201d You can only say so many superlative"
+    },
+    {
+     "strength": 420,
+     "steered": "When a reader asks me what I honestly think of their very first novel, I tell them that glowing praise is eff eff rave raving g praising rapra sing praises pra PraPra PRAPRA Praise singing.\n\nPraise heaped high enough heaping highly ha eu la laud encom sung accolades ex\u0e22\u0e01 heaps superlative positive glowinglyglowinglyglowra raverave r ravrav lavla lavishpraise praised acclaim compliment compliments comcom ComCom adulatory ful glowing glowingg"
+    }
+   ]
+  }
+ ]
+}

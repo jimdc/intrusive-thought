@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intrusive Thought — force a concept in, or forbid it, inside a language model</title>
+  <meta name="description" content="A real Gemma 2 has a knob for each concept it knows. Turn one up until it can't think of anything else — or down, and watch it dance around the word.">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Intrusive Thought</h1>
+    <p class="sub">A real <a href="https://huggingface.co/google/gemma-2-2b" target="_blank" rel="noopener"><b>Gemma&nbsp;2</b></a> has a separate dial for each concept it knows — one for “the
+      Golden Gate Bridge,” one for “drugs,” one for “death.” Pick a thought and turn its dial: to the
+      <b>right</b> until the model can’t think of anything else, or to the <b>left</b> until it can’t say
+      it at all — and squirms around the word it’s plainly thinking of, reaching for any euphemism but the
+      real one.</p>
+    <div id="status">loading…</div>
+  </header>
+
+  <section id="demo" hidden>
+    <p class="eyebrow">pick a thought, then drag the dial</p>
+    <div id="concepts" class="chips"></div>
+
+    <div class="feat" id="feat"></div>
+    <div class="panels">
+      <div class="panel">
+        <h3>the model, left alone</h3>
+        <p class="out" id="defaultOut"></p>
+      </div>
+      <div class="panel steered">
+        <h3><span id="steeredHead">with the dial</span> <span id="zone" class="zone"></span></h3>
+        <p class="out" id="steeredOut"></p>
+      </div>
+    </div>
+
+    <div class="slider">
+      <span class="endlabel">forbid&nbsp;⟵</span>
+      <input type="range" id="strength" min="0" max="6" step="1" value="3">
+      <span class="endlabel">⟶&nbsp;force</span>
+      <span id="strengthVal" class="sval"></span>
+    </div>
+    <p id="caption" class="caption"></p>
+
+    <div class="lesson" id="lesson" hidden>
+      <span class="lesson-eyebrow">what this one shows</span>
+      <p class="lesson-text" id="lessonText"></p>
+      <a class="lesson-paper" id="lessonPaper" target="_blank" rel="noopener"></a>
+    </div>
+  </section>
+
+</div>
+<script src="static/app.js"></script>
+</body>
+</html>
