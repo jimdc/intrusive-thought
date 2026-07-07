@@ -70,3 +70,25 @@ No build step.
 - **Sibling:** `../inner-monologue/` — complementary interpretability demo (circuit
   tracing vs. feature steering). Both share the `gemma_scope_local` extractor pattern.
 - **Published at:** `https://jimdc.github.io/intrusive-thought/` (public, pseudonymous).
+
+## TL;DR
+
+1 single-file app (`index.html`) reads 1 precomputed data file (`data/steers.json`) covering 7 SAE feature chips × the full slider range, regenerated offline by 3 dev-only tool scripts (`build_bidir.py`, `curate4.py`, `probe_slot.py`); hard rule: the deployed page makes zero network requests.
+
+1. User opens `jimdc.github.io/intrusive-thought/` (or local `index.html`) — no server or API key required.
+2. `index.html` fetches `data/steers.json`, loading all precomputed steered completions into memory.
+3. The page renders 7 chip tabs (Golden Gate Bridge, drugs, death, Spanish, scripture, gratitude, flattery).
+4. User selects a chip tab; a slider appears labelled "force" (positive) and "forbid" (negative).
+5. User drags the slider; `index.html` looks up the matching completion for that chip × slider position × direction in the in-memory JSON.
+6. The completion text is displayed, illustrating how the model fixates or degenerates under forcing, or reroutes under forbidding.
+
+## Check yourself
+
+**Q:** How many curated SAE feature chips does the demo expose, and what are they?
+**A:** 7 chips: Golden Gate Bridge, drugs, death, Spanish, scripture, gratitude, and flattery.
+
+**Q:** `data/steers.json` is deleted from the repo — what breaks?
+**A:** The deployed page loses all completion data and renders nothing; there is no fallback because the page makes zero network requests and has no other data source.
+
+**Q:** What is the hard invariant that keeps the demo fully static?
+**A:** Every completion is precomputed and committed into `data/steers.json` before deploy; the live page never calls an API, requires no server, and needs no install.
