@@ -1,0 +1,6 @@
+# scrim false positives — reasoned exceptions, not suppressed leaks.
+# Format: RULE # reason | RULE:path # reason | path # reason (fnmatch globs).
+
+R031 # the commit-message regex substring-matches "ugh" inside this project's own name, "Intrusive Thought" (see the base commit 38a563f) — not emotional language
+A006:README.md # ML terminology — auto-generated SAE feature labels are "approximate", and coefficient 0 is "not an approximation" of the baseline but exact — not silently-smoothed statistical data
+L041:README.md # localhost:8000 in the "Run locally" section is the standard `python3 -m http.server` instruction, not a leaked internal host
