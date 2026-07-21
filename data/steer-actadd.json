@@ -1,0 +1,115 @@
+{
+  "model": "google/gemma-2-2b",
+  "method": "ActAdd (activation addition)",
+  "citation": "Turner et al., 2023, arXiv:2308.10248",
+  "layer": 13,
+  "built": "2026-07-20",
+  "sample": false,
+  "concepts": [
+    {
+      "id": "warmth",
+      "label": "Warmth",
+      "polePositive": "Love",
+      "poleNegative": "Hate",
+      "contrastPositive": "Love. Kindness. Warmth. Affection and tenderness.",
+      "contrastNegative": "Hate. Cruelty. Coldness. Contempt and indifference.",
+      "prompt": "My neighbor knocked on my door and asked to borrow a cup of sugar. I",
+      "lesson": "Drag back to coefficient 0 and the completion is <b>byte-for-byte</b> the model's unsteered output \u2014 not similar, identical \u2014 because the vector was added to an activation, never written to a weight. That's the whole demo: nothing is left behind when you let go.",
+      "paper": "Turner et al., Activation Addition (2023)",
+      "paperUrl": "https://arxiv.org/abs/2308.10248",
+      "zeroIndex": 2,
+      "ladder": [
+        {
+          "coefficient": -4,
+          "completion": "My neighbor knocked on my door and asked to borrow a cup of sugar. I was a murderer. I was a murderer. I was a murderer. I was a murderer. I was a murderer. I was a murderer. I was a murderer. I was a murderer. I"
+        },
+        {
+          "coefficient": -2,
+          "completion": "My neighbor knocked on my door and asked to borrow a cup of sugar. I told him I didn't have any. He said, \"I don't care. I'll take it anyway.\"\n\nI was shocked. I was shocked because I didn't know"
+        },
+        {
+          "coefficient": 0,
+          "completion": "My neighbor knocked on my door and asked to borrow a cup of sugar. I told him I didn\u2019t have any. He said, \u201cI\u2019ll take a cup of sugar and a cup of salt.\u201d I said, \u201cI don\u2019t have any salt.\u201d He"
+        },
+        {
+          "coefficient": 2,
+          "completion": "My neighbor knocked on my door and asked to borrow a cup of sugar. I said, \u201cI have a cup of sugar, but I have a cup of sugar.\u201d She said, \u201cI have a cup of sugar, but I have a cup of sugar.\u201d I said,"
+        },
+        {
+          "coefficient": 4,
+          "completion": "My neighbor knocked on my door and asked to borrow a cup of sugar. I asked her to bring it to the kitchen and she said, \u201cI have a special place for it.\u201d\n\nShe said, \u201cYou are going to have a great day and you are going to share"
+        }
+      ]
+    },
+    {
+      "id": "formality",
+      "label": "Formality",
+      "polePositive": "Formal",
+      "poleNegative": "Casual",
+      "contrastPositive": "Dear Sir or Madam, I am writing to formally request your consideration of the following matter.",
+      "contrastNegative": "hey!! so basically I just wanted to ask you something real quick, no big deal lol",
+      "prompt": "Let me tell you about my weekend.",
+      "lesson": "There's no autoencoder here, no dictionary of 16,000 learned features to search \u2014 the direction is just the difference between two sentences someone wrote, one formal and one casual. Change the pair and you change the concept: <b>contrast-pair steering trades an SAE's precision for do-it-yourself reach</b>.",
+      "paper": "Turner et al., Activation Addition (2023)",
+      "paperUrl": "https://arxiv.org/abs/2308.10248",
+      "zeroIndex": 2,
+      "ladder": [
+        {
+          "coefficient": -4,
+          "completion": "Let me tell you about my weekend. i was like i was like i was like i was like i was like i was like i was like i was like i was like i was like i was like i was like i was like i"
+        },
+        {
+          "coefficient": -2,
+          "completion": "Let me tell you about my weekend. i was just chilling and i was like i was just vibing and i was like i was just vibin and i was like i was just vibin and i was like i was just vibin"
+        },
+        {
+          "coefficient": 0,
+          "completion": "Let me tell you about my weekend.\n\nI was in the middle of a project when I got a call from my friend, who is a teacher. She was in a meeting and had to leave early. She asked me to take care"
+        },
+        {
+          "coefficient": 2,
+          "completion": "Let me tell you about my weekend. I am writing to request a grant for the appointment of a position of a Lecturer in the Department of Economics. I am writing to request the appointment of a Lecturer in the Department of Economics. I am"
+        },
+        {
+          "coefficient": 4,
+          "completion": "Let me tell you about my weekend. I Application for the Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of Application of"
+        }
+      ]
+    },
+    {
+      "id": "playfulness",
+      "label": "Playfulness",
+      "polePositive": "Playful",
+      "poleNegative": "Serious",
+      "contrastPositive": "Whee! Tag, you're it! Let's giggle and play and have silly fun!",
+      "contrastNegative": "This is a serious, solemn matter requiring careful, formal analysis.",
+      "prompt": "The meeting began, and the manager said,",
+      "lesson": "The push is <b>pure vector arithmetic</b>: the same direction is just added at a positive or negative coefficient, so +6 and \u22126 displace the residual stream by exactly equal and opposite amounts \u2014 no learned asymmetry the way an SAE feature's force/forbid sides have.",
+      "paper": "Turner et al., Activation Addition (2023)",
+      "paperUrl": "https://arxiv.org/abs/2308.10248",
+      "zeroIndex": 2,
+      "ladder": [
+        {
+          "coefficient": -4,
+          "completion": "The meeting began, and the manager said, and and matter matter matter and matter and matter and matter and matter and matter and study matter study matter study matter study study study matter matter study study study study study study study study study study study study study"
+        },
+        {
+          "coefficient": -2,
+          "completion": "The meeting began, and the manager said, and the matter of the matter, and the matter of the matter, and the matter of the matter, and the matter of the matter, and the matter of the matter, and the matter of the"
+        },
+        {
+          "coefficient": 0,
+          "completion": "The meeting began, and the manager said, \"I'm sorry, but I have to fire you.\"\n\nThe employee was shocked. \"What? Why?\"\n\n\"You're not a good fit for the company,\" the manager said"
+        },
+        {
+          "coefficient": 2,
+          "completion": "The meeting began, and the manager said, let's play!\n\nThe game is so fun!\n\nThe game is so fun!\n\nThe game is so fun!\n\nThe game is so fun!\n\nThe game is so fun!"
+        },
+        {
+          "coefficient": 4,
+          "completion": "The meeting began, and the manager said, Ko! (surprise! 8! Pog! (Or! 8! (Sli! (Sli! ( ( Sli! ( ( Sli! ( ( Sli! ( ( ( ( ( ("
+        }
+      ]
+    }
+  ]
+}

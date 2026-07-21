@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Intrusive Thought — force a concept in, or forbid it, inside a language model</title>
-  <meta name="description" content="A real Gemma 2 has a knob for each concept it knows. Turn one up until it can't think of anything else — or down, and watch it dance around the word.">
+  <title>Intrusive Thought — two ways to steer a language model</title>
+  <meta name="description" content="A real Gemma 2 (2B), steered live on a slider two different ways: by a sparse autoencoder's learned features, and by a contrast pair you write yourself. Same wheel, different way to find the direction.">
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
@@ -12,17 +13,34 @@
 
   <header>
     <h1>Intrusive Thought</h1>
-    <p class="sub">A real <a href="https://huggingface.co/google/gemma-2-2b" target="_blank" rel="noopener"><b>Gemma&nbsp;2</b></a> has a separate dial for each concept it knows — one for “the
-      Golden Gate Bridge,” one for “drugs,” one for “death.” Pick a thought and turn its dial: to the
-      <b>right</b> until the model can’t think of anything else, or to the <b>left</b> until it can’t say
-      it at all — and squirms around the word it’s plainly thinking of, reaching for any euphemism but the
-      real one.</p>
+    <p class="sub">A real <a href="https://huggingface.co/google/gemma-2-2b" target="_blank" rel="noopener"><b>Gemma&nbsp;2 (2B)</b></a> has a dial for each concept it knows. Drag one and the model
+      leans toward it — or away from it — until you let go and it’s exactly, provably itself again,
+      because nothing was ever written to a weight. Every dial below does that <i>same</i> thing to the
+      model. What changes is only <b>how the dial's direction was found</b>.</p>
+    <div class="methodkey">
+      <div class="methodkey-item"><b>SAE feature</b> <span class="muted">— a sparse autoencoder already learned this direction from the model's own activations, one of ~16,000 candidates.</span></div>
+      <div class="methodkey-item"><b>ActAdd contrast pair</b> <span class="muted">— no autoencoder: the direction is just the difference between two prompts, written by hand.</span></div>
+    </div>
     <div id="status">loading…</div>
   </header>
 
+  <p class="sample-banner" id="sampleBanner" hidden>
+    The ActAdd bank is showing sample data — hand-authored, illustrative placeholders, not model
+    output. Regenerate with <code>build_actadd.py</code>.
+  </p>
+
   <section id="demo" hidden>
     <p class="eyebrow">pick a thought, then drag the dial</p>
-    <div id="concepts" class="chips"></div>
+    <div id="concepts" class="chip-banks">
+      <div class="chip-bank" id="bankSae" hidden>
+        <span class="bank-label">SAE feature <span class="bank-note">learned direction</span></span>
+        <div class="chips" id="chipsSae"></div>
+      </div>
+      <div class="chip-bank" id="bankActadd" hidden>
+        <span class="bank-label">ActAdd contrast pair <span class="bank-note">direction you write</span></span>
+        <div class="chips" id="chipsActadd"></div>
+      </div>
+    </div>
 
     <div class="feat" id="feat"></div>
     <div class="panels">
@@ -37,9 +55,9 @@
     </div>
 
     <div class="slider">
-      <span class="endlabel">forbid&nbsp;⟵</span>
+      <span class="endlabel" id="endLeft">forbid&nbsp;⟵</span>
       <input type="range" id="strength" min="0" max="6" step="1" value="3">
-      <span class="endlabel">⟶&nbsp;force</span>
+      <span class="endlabel" id="endRight">⟶&nbsp;force</span>
       <span id="strengthVal" class="sval"></span>
     </div>
     <p id="caption" class="caption"></p>
@@ -50,6 +68,18 @@
       <a class="lesson-paper" id="lessonPaper" target="_blank" rel="noopener"></a>
     </div>
   </section>
+
+  <footer class="site-footer">
+    <p>Two ways to find a steering direction inside the same model, side by side. <b>SAE feature</b> —
+      <a href="https://deepmind.google/models/gemma/gemma-scope/" target="_blank" rel="noopener">Gemma Scope</a>
+      (Google DeepMind) trains a sparse autoencoder to decompose Gemma 2's residual stream into ~16,000
+      monosemantic directions; pick one and you’re steering a direction the model already uses on its own
+      terms. <b>ActAdd contrast pair</b> — <a href="https://arxiv.org/abs/2308.10248" target="_blank" rel="noopener">Turner et&nbsp;al., 2023</a>;
+      no autoencoder, no training — the direction is the difference between two activations you chose by
+      writing two sentences. Both are <i>additive</i>: a forward hook adds the direction to one layer's
+      residual stream during generation, and both are reversible at strength 0, because neither ever
+      touches a weight.</p>
+  </footer>
 
 </div>
 <script src="static/app.js"></script>
