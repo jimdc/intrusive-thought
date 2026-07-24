@@ -11,3 +11,12 @@ __pycache__/
 # OS
 .DS_Store
 predecessor-steering-wheel.bundle
+
+# agent/estate scaffolding stays local, never public
+AGENTS.md
+CLAUDE.md
+backlog/
+PAPERCUTS.md
+.scrimignore
+.claude/
+.agents/
