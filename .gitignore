@@ -5,8 +5,14 @@
 
 # python / build
 .venv/
+.venv-actadd/
 __pycache__/
 *.pyc
+
+# node / playwright
+node_modules/
+playwright-report/
+test-results/
 
 # OS
 .DS_Store
